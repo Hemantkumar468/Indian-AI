@@ -54,7 +54,7 @@ const chatWithAI = async (req, res) => {
 
     // Call OpenAI API
     const completion = await openai.chat.completions.create({
-      model: 'nvidia/nemotron-3-super-120b-a12b:free',
+      model: 'meta-llama/llama-3-8b-instruct:free',
       messages,
       max_tokens: 4096,
       temperature: 0.7,
