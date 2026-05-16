@@ -5,7 +5,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   baseURL: process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1',
   defaultHeaders: {
-    "HTTP-Referer": "http://localhost:5173", // Site URL
+    "HTTP-Referer": "https://indian-ai-gules.vercel.app", // Site URL
     "X-Title": "IndianAI", // Site Name
   }
 });
